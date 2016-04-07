@@ -24,4 +24,7 @@ class OffsetGenTest < Minitest::Test
     refute @gen.offset_d < 0
   end
 
+  def test_the_offset
+    assert_equal
+
 end

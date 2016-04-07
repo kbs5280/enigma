@@ -1,16 +1,15 @@
 require 'pry'
 
 class OffsetGen
-  attr_reader :last_four
 
   def initialize
-
-  end
-
-  def offset_a
     date = (Time.now.strftime("%d%m%y")).to_i
     date_squared = (date ** 2).to_s.split('')
-    last_four = date_squared[-4..-1]
+    @last_four = date_squared[-4..-1]
+  end
+
+  binding.pry
+  def offset_a
     @last_four[0].to_i
   end
 
@@ -36,4 +35,5 @@ class OffsetGen
   end
 end
 
-offset_c = OffsetGen.new
+offset_c = OffsetGen.new.offset_c
+puts offset_c

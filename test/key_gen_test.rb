@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/KeyGen'
+require './lib/key_gen'
 require 'pry'
 
 class KeyGenTest < Minitest::Test

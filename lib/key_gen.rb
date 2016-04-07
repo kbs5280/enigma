@@ -29,10 +29,3 @@ class KeyGen
   end
 
 end
-
-gen = KeyGen.new
-p gen.rand_num
-p gen.key_a
-p gen.key_b
-p gen.key_c
-p gen.key_d

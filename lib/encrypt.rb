@@ -45,23 +45,4 @@ class Encrypt
   end
 
 
-
-
-
-
-
-
-
-
-
-
-
-  def rotation(string)
-
-  end
 end
-
-encrypt = Encrypt.new("Here's a MESSAGE")
-
-puts encrypt.message
-puts encrypt.encrypted_message

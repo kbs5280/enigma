@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/OffsetGen'
+require './lib/offset_gen'
 require 'pry'
 
 class OffsetGenTest < Minitest::Test
@@ -23,8 +23,5 @@ class OffsetGenTest < Minitest::Test
     refute @gen.offset_c < 0
     refute @gen.offset_d < 0
   end
-
-  def test_the_offset
-    assert_equal
 
 end
